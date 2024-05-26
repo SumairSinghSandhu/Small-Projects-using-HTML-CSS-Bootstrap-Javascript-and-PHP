@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 10</title>
+</head>
+<body>
+    <h1>This is a square function:</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button onclick="squareNumber()">Enter</button>
+    <p id="output"></p>
+    <script>
+        function squareNumber() {
+            const input = document.getElementById("numberInput").value;
+            const result = input * input;
+            document.getElementById("output").innerHTML = `<strong>Square of ${input} is ${result}</strong>`;
+        }
+    </script>
+</body>
+</html>
