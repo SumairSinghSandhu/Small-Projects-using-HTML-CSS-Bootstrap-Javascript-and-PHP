@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumair Singh Sandhu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main{
+      flex: 1; 
+    }
+    footer {
+      flex-shrink: 0;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="d-flex justify-content-between align-items-center p-3">
+    <div>
+      <a class="text-primary" href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" >HTML5</a>
+      <a class="text-primary" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" >JavaScript</a>
+      <a class="text-primary" href="https://getbootstrap.com/docs/5.3/getting-started/introduction" >Bootstrap</a>
+    </div>
+    <div>
+      <div class="btn-group">
+        <button id="dark-btn" class="btn btn-dark">Dark</button>
+        <button id="light-btn" class="btn btn-light">Light</button>
+      </div>
+      <button id="contact-btn" class="btn btn-primary">Contact Me</button>
+    </div>
+  </header>
+  <main class="container mt-5">
+    <div class="row">
+      <div class="col-2">
+        <p>Input the number for which you have to do factorial</p>
+      </div>
+      <div class="col-10">
+        <input type="number" id="factorial-input" class="form-control" style="font-size: 2rem;">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-2 text-right">
+        <button id="calculate-btn" class="btn btn-primary">Enter</button>
+      </div>
+      <div class="col-10">
+        <div id="result-screen" class="p-3" style="background-color: #332703; color: #fff;"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center mt-5">
+    <p>Simple factorial calculator @ 2024</p>
+  </footer>  
+  <script src="js/script.js"></script>
+</body>
+</html>
